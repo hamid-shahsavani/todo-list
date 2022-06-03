@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="hamid shahsavani">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css"/>
+    <title>todo app</title>
+  </head>
+  <body class="w-screen h-screen flex justify-center items-center">
+    <section class="w-[500px] h-full flex flex-col justify-center items-center gap-4">
+      <!-- top -->
+      <div class="flex gap-2 w-full justify-center">
+        <div class="relative w-full">
+          <button id="todo-add" class="btn btn-sm btn-square btn-active btn-primary absolute top-2 right-2">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path></svg>
+          </button>
+          <input id="todo-input" type="text" placeholder="please type here ..." spellcheck="false" class="input input-bordered input-primary w-full" />
+        </div>
+        <select id="todo-select" class="select select-primary w-[120px]">
+          <option selected value="all">all</option>
+          <option value="complete">complete</option>
+          <option value="uncomplete">uncomplete</option>
+        </select>
+      </div>
+      <!-- bottom -->
+      <div class="w-full">
+        <!-- list todos -->
+        <ul id="todo-list" class="w-full flex flex-col gap-2"></ul>
+      </div>
+    </section>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
