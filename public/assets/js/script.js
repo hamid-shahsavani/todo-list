@@ -27,6 +27,9 @@ todos.forEach((i) => {
 // add todo
 
 addTodoBtn.addEventListener('click',(e)=>{
+  if(todoInput.value === ''){
+    return;
+  }
   e.preventDefault();
   let parent = document.createElement('li');
   parent.classList.add(... ['w-full', 'relative']);
