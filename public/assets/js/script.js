@@ -69,12 +69,12 @@ selectButton.addEventListener('click',(e) => {
     task.classList.remove('hidden');
     task.classList.add('block');
     switch(e.target.value){
-      case 'complete':
+      case 'uncomplete':
         if(task.classList.contains('!brightness-75')){
           task.classList.add('hidden');
         }
         break;
-      case 'uncomplete':
+      case 'complete':
         if(!task.classList.contains('!brightness-75')){
           task.classList.add('hidden');
         }
